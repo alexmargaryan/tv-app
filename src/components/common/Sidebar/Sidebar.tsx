@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 
 import NavGeneral from "./NavGeneral";
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+const AppSidebar = ({ ...props }: React.ComponentProps<typeof Sidebar>) => {
   const { open, setOpen } = useSidebar();
   const [hoverTimeout, setHoverTimeout] = React.useState<NodeJS.Timeout | null>(
     null
@@ -84,4 +84,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       )}
     </Sidebar>
   );
-}
+};
+
+export default AppSidebar;

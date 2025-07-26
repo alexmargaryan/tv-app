@@ -3,7 +3,7 @@ import { useState } from "react";
 import movies from "./api/movies";
 import type { Movie } from "./api/types";
 import MainFeaturedMovie from "./components/common/MainFeaturedMovie";
-import { AppSidebar } from "./components/common/Sidebar/Sidebar";
+import AppSidebar from "./components/common/Sidebar";
 import TrendingNow from "./components/common/TrendingNow";
 import { SidebarProvider } from "./components/ui/sidebar";
 import { addMovieToVisitedMovies } from "./lib/helpers";
